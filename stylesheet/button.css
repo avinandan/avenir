@@ -1,0 +1,281 @@
+/* * * * * * * * * * * * * * * *
+ * * * * * main styles * * * * *
+ * * * * * * * * * * * * * * * */
+
+html {height:100%; width:100%;}
+body {
+	
+}
+nav {
+	position:absolute;
+	top:50%; left:50%;
+	margin-top:10px;
+	margin-left:-65px;
+	overflow:hidden;
+	width:400px;
+	height:100px;
+}
+nav a {
+	display:block;
+	float:left;
+	text-decoration:none;
+	text-align:center;
+}
+nav a:nth-child(2) {
+	margin:0 50px 0 50px;
+}
+nav a figure {
+	display:block;
+	position:relative;
+	width:100px; height:100px;
+	margin:0;
+}
+
+
+
+/* * * * * * * * * * * * *
+ * * * * * about * * * * *
+ * * * * * * * * * * * * */
+
+#about figure div {
+	position:absolute;
+	bottom:0; left:0; right:0;
+	-webkit-transition:bottom 0.2s ease;
+	   -moz-transition:bottom 0.2s ease;
+	    -ms-transition:bottom 0.2s ease;
+	     -o-transition:bottom 0.2s ease;
+	        transition:bottom 0.2s ease;
+}
+#about figure div:nth-child(1) {bottom:30px;}
+#about figure div:nth-child(2) {bottom:15px;}
+#about figure div:nth-child(3) {bottom:0;}
+
+#about figure div span {
+	position:absolute;
+	bottom:0;
+	height:8px;
+	background:#333;
+	border-radius:4px;
+	-webkit-transition:-webkit-transform 0.3s 0.1s ease-in-out;
+	   -moz-transition:   -moz-transform 0.3s 0.1s ease-in-out;
+	    -ms-transition:    -ms-transform 0.3s 0.1s ease-in-out;
+	     -o-transition:     -o-transform 0.3s 0.1s ease-in-out;
+	        transition:        transform 0.3s 0.1s ease-in-out;
+}
+#about figure div span:nth-child(1) {
+	right:36px; width:64px;
+	-webkit-transform:rotate(18deg);
+	   -moz-transform:rotate(18deg);
+	    -ms-transform:rotate(18deg);
+	     -o-transform:rotate(18deg);
+	        transform:rotate(18deg);
+	-webkit-transform-origin:60px 4px;
+	   -moz-transform-origin:60px 4px;
+	    -ms-transform-origin:60px 4px;
+	     -o-transform-origin:60px 4px;
+	        transform-origin:60px 4px;
+}
+#about figure div span:nth-child(2) {
+	right:0; width:44px;
+	-webkit-transform:rotate(-28deg);
+	   -moz-transform:rotate(-28deg);
+	    -ms-transform:rotate(-28deg);
+	     -o-transform:rotate(-28deg);
+	        transform:rotate(-28deg);
+	-webkit-transform-origin:4px 4px;
+	   -moz-transform-origin:4px 4px;
+	    -ms-transform-origin:4px 4px;
+	     -o-transform-origin:4px 4px;
+	        transform-origin:4px 4px;
+}
+#about figure div span:nth-child(3) {
+	bottom:18px; right:54px; width:44px;
+	-webkit-transform:rotate(-28deg);
+	   -moz-transform:rotate(-28deg);
+	    -ms-transform:rotate(-28deg);
+	     -o-transform:rotate(-28deg);
+	        transform:rotate(-28deg);
+	-webkit-transform-origin:4px 4px;
+	   -moz-transform-origin:4px 4px;
+	    -ms-transform-origin:4px 4px;
+	     -o-transform-origin:4px 4px;
+	        transform-origin:4px 4px;
+}
+#about figure div span:nth-child(2) span {
+	top:0; right:-1px; width:64px;
+	-webkit-transform:rotate(46deg);
+	   -moz-transform:rotate(46deg);
+	    -ms-transform:rotate(46deg);
+	     -o-transform:rotate(46deg);
+	        transform:rotate(46deg);
+	-webkit-transform-origin:60px 4px;
+	   -moz-transform-origin:60px 4px;	
+	    -ms-transform-origin:60px 4px;	
+	     -o-transform-origin:60px 4px;	
+	        transform-origin:60px 4px;	
+}
+#about:hover figure div:nth-child(1) span:nth-child(2) {
+	-webkit-transform:rotate(-58deg);
+	   -moz-transform:rotate(-58deg);
+	    -ms-transform:rotate(-58deg);
+	     -o-transform:rotate(-58deg);
+	        transform:rotate(-58deg);
+}
+#about:hover figure div:nth-child(1) span:nth-child(3) {
+	-webkit-transform:rotate(-58deg);
+	   -moz-transform:rotate(-58deg);
+	    -ms-transform:rotate(-58deg);
+	     -o-transform:rotate(-58deg);
+	        transform:rotate(-58deg);
+}
+#about:hover figure div span:nth-child(2) span {
+	-webkit-transform:rotate(76deg);
+	   -moz-transform:rotate(76deg);
+	    -ms-transform:rotate(76deg);
+	     -o-transform:rotate(76deg);
+	        transform:rotate(76deg);
+}
+
+#about:hover figure div:nth-child(1) {bottom:36px;}
+#about:hover figure div:nth-child(2) {bottom:18px;}
+
+
+
+/* * * * * * * * * * * * * * *
+ * * * * * portfolio * * * * *
+ * * * * * * * * * * * * * * */
+ 
+#portfolio figure {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:4px;
+	color:#A4B457;	
+}
+#portfolio figure div {
+	position:absolute;
+}
+#portfolio figure div:nth-child(1) {
+	bottom:16px; left:0; right:0;
+	height:45px;	
+	border:8px solid #333;
+	border-radius:4px;
+}
+#portfolio figure div:nth-child(2) {
+	bottom:8px; left:37.5px; right:37.5px;
+	height:4px;	
+	background:#333;
+}
+#portfolio figure div:nth-child(3) {
+	bottom:0; left:15px; right:15px;
+	height:8px;	
+	background:#333;
+	border-radius:4px 4px 0 0;
+}
+#portfolio figure div:nth-child(1) span {
+	position:absolute;
+	top:22px; left:41.5px;
+	height:1px; width:0;
+	background:#333;
+	overflow:hidden;
+	-webkit-transition-property:left, width, top, height;
+	   -moz-transition-property:left, width, top, height;
+	    -ms-transition-property:left, width, top, height;
+	     -o-transition-property:left, width, top, height;
+	        transition-property:left, width, top, height;	
+	-webkit-animation-timing-function:ease;
+	   -moz-animation-timing-function:ease;
+	    -ms-animation-timing-function:ease;
+	     -o-animation-timing-function:ease;	
+	        animation-timing-function:ease;	
+	-webkit-transition-duration:0.2s;
+	   -moz-transition-duration:0.2s;
+	    -ms-transition-duration:0.2s;
+	    -o-transition-duration:0.2s;
+	       transition-duration:0.2s;	
+	-webkit-transition-delay:0, 0, 0.2s, 0.2s;
+	   -moz-transition-delay:0, 0, 0.2s, 0.2s;
+	    -ms-transition-delay:0, 0, 0.2s, 0.2s;
+	     -o-transition-delay:0, 0, 0.2s, 0.2s;
+ 	        transition-delay:0, 0, 0.2s, 0.2s;
+}
+#portfolio figure div:nth-child(1) span b {
+	position:absolute;
+	top:0; left:0; right:0;
+	opacity:0;
+	padding:0 4px 0 4px;
+	font-weight:normal;	
+	text-align:left;
+	-webkit-animation:b 4s linear infinite;	
+	   -moz-animation:b 4s linear infinite;	
+	    -ms-animation:b 4s linear infinite;	
+	     -o-animation:b 4s linear infinite;	
+	        animation:b 4s linear infinite;	
+	-webkit-transition:opacity 0.2s 0.4s ease;
+	   -moz-transition:opacity 0.2s 0.4s ease;
+	    -ms-transition:opacity 0.2s 0.4s ease;
+	     -o-transition:opacity 0.2s 0.4s ease;
+	        transition:opacity 0.2s 0.4s ease;
+}
+@-webkit-keyframes b {from {top:0} to {top:-100px}}
+   @-moz-keyframes b {from {top:0} to {top:-100px}}
+    @-ms-keyframes b {from {top:0} to {top:-100px}}
+     @-o-keyframes b {from {top:0} to {top:-100px}}
+        @keyframes b {from {top:0} to {top:-100px}}
+
+#portfolio figure div:nth-child(1) span.delay-first {
+	-webkit-transition-delay:0.2s, 0.2s, 0, 0;
+	   -moz-transition-delay:0.2s, 0.2s, 0, 0;
+	    -ms-transition-delay:0.2s, 0.2s, 0, 0;
+	     -o-transition-delay:0.2s, 0.2s, 0, 0;
+ 	        transition-delay:0.2s, 0.2s, 0, 0;	
+}
+#portfolio figure div:nth-child(1) span.delay-second {
+	-webkit-transition-delay:0.4s, 0.4s, 0.2s, 0.2s;
+	   -moz-transition-delay:0.4s, 0.4s, 0.2s, 0.2s;
+	    -ms-transition-delay:0.4s, 0.4s, 0.2s, 0.2s;
+	     -o-transition-delay:0.4s, 0.4s, 0.2s, 0.2s;
+ 	        transition-delay:0.4s, 0.4s, 0.2s, 0.2s;	
+}
+#portfolio figure div:nth-child(1) span b.delay-none {
+	-webkit-transition:opacity 0.2s ease;
+	   -moz-transition:opacity 0.2s ease;
+	    -ms-transition:opacity 0.2s ease;
+	     -o-transition:opacity 0.2s ease;
+	        transition:opacity 0.2s ease;	
+}
+#portfolio:hover figure div:nth-child(1) span {
+	width:84px; left:0px; top:0;
+	height:45px;
+}
+#portfolio:hover figure div:nth-child(1) span b {
+	opacity:1;
+}
+
+
+
+/* * * * * * * * * * * * * * *
+ * * * * * statistic * * * * *
+ * * * * * * * * * * * * * * */
+ 
+#statistics figure div {
+	position:absolute;
+	width:8px;
+	bottom:0;
+  border-radius:4px;
+	background:#333;
+	-webkit-transition:height 0.5s ease;
+	   -moz-transition:height 0.5s ease;
+	    -ms-transition:height 0.5s ease;
+	     -o-transition:height 0.5s ease;
+	        transition:height 0.5s ease;
+}
+#statistics figure div:nth-child(1) {height:10px; left:10px;}
+#statistics figure div:nth-child(2) {height:20px; left:26px;}
+#statistics figure div:nth-child(3) {height:30px; left:42px;}
+#statistics figure div:nth-child(4) {height:40px; left:58px;}
+#statistics figure div:nth-child(5) {height:50px; left:74px;}
+
+#statistics:hover figure div:nth-child(1) {height:50px; left:10px;}
+#statistics:hover figure div:nth-child(2) {height:40px; left:26px;}
+#statistics:hover figure div:nth-child(3) {height:30px; left:42px;}
+#statistics:hover figure div:nth-child(4) {height:20px; left:58px;}
+#statistics:hover figure div:nth-child(5) {height:10px; left:74px;}
